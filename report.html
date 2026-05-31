@@ -302,137 +302,64 @@
       size: A4;
       margin: 12mm 10mm;
     }
-
     html, body {
       background: #fff !important;
       font-size: 10px;
       line-height: 1.45;
     }
-
-    .container {
-      max-width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* 헤더 */
+    .container { max-width: 100%; padding: 0; margin: 0; }
     .report-header {
-      padding: 18px 20px;
-      margin-bottom: 14px;
-      border-radius: 8px;
+      padding: 18px 20px; margin-bottom: 14px; border-radius: 8px;
       box-shadow: none !important;
-      page-break-after: auto;
-      break-after: auto;
     }
     .report-header .eyebrow { font-size: 9px; margin-bottom: 4px; letter-spacing: 1px; }
     .report-header h1 { font-size: 18px; margin-bottom: 6px; }
     .report-header .meta { font-size: 10px; }
-
-    /* 목차 */
-    .toc {
-      padding: 12px 16px;
-      margin-bottom: 14px;
-      page-break-after: avoid;
-    }
+    .toc { padding: 12px 16px; margin-bottom: 14px; page-break-after: avoid; }
     .toc h2 { font-size: 11px; margin-bottom: 8px; }
     .toc ol { font-size: 10px; padding-left: 16px; }
     .toc ol li { margin-bottom: 3px; }
-
-    /* 섹션 (page-break-inside 제거 — 섹션이 A4보다 크기 때문) */
     section {
-      padding: 14px 16px;
-      margin-bottom: 12px;
-      border-radius: 8px;
+      padding: 14px 16px; margin-bottom: 12px; border-radius: 8px;
       box-shadow: none !important;
     }
     section h2 { font-size: 14px; padding-bottom: 6px; margin-bottom: 4px; }
     section h3 { font-size: 12px; margin: 14px 0 8px 0; }
     section h4 { font-size: 11px; margin: 12px 0 6px 0; }
     section p { font-size: 10px; margin: 5px 0; }
-
-    /* KPI 카드 */
-    .kpi-grid {
-      gap: 8px;
-      margin: 10px 0;
-    }
-    .kpi-card {
-      padding: 10px 8px;
-      border-radius: 6px;
-      page-break-inside: avoid;
-      break-inside: avoid;
-    }
+    .kpi-grid { gap: 8px; margin: 10px 0; }
+    .kpi-card { padding: 10px 8px; border-radius: 6px; page-break-inside: avoid; break-inside: avoid; }
     .kpi-card .label { font-size: 9px; margin-bottom: 3px; }
     .kpi-card .value { font-size: 15px; }
-
-    /* 표 */
     .table-wrap { margin: 8px 0; }
     table { font-size: 9.5px; }
     th, td { padding: 6px 8px; }
     th { font-size: 9px; }
-
-    /* 인사이트 박스 */
     .insight {
-      padding: 8px 12px;
-      margin: 8px 0;
-      font-size: 9.5px;
-      border-radius: 4px;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      padding: 8px 12px; margin: 8px 0; font-size: 9.5px; border-radius: 4px;
+      page-break-inside: avoid; break-inside: avoid;
     }
-
-    /* 콘텐츠 블록 */
     .content-block {
-      padding: 10px 12px;
-      margin: 10px 0;
-      border-radius: 6px;
-      page-break-inside: avoid;
-      break-inside: avoid;
+      padding: 10px 12px; margin: 10px 0; border-radius: 6px;
+      page-break-inside: avoid; break-inside: avoid;
     }
     .content-block .title { font-size: 11px; margin-bottom: 8px; }
-    .content-block .num-badge {
-      width: 18px;
-      height: 18px;
-      font-size: 10px;
-    }
-
-    .mini-grid {
-      gap: 6px;
-      margin-bottom: 8px;
-    }
+    .content-block .num-badge { width: 18px; height: 18px; font-size: 10px; }
+    .mini-grid { gap: 6px; margin-bottom: 8px; }
     .mini-stat { padding: 6px 8px; border-radius: 4px; }
     .mini-stat .l { font-size: 8.5px; margin-bottom: 2px; }
     .mini-stat .v { font-size: 11px; }
-
-    /* 뱃지 */
-    .badge {
-      padding: 2px 7px;
-      font-size: 9px;
-    }
-
-    /* 차트 (section 단위 X, 개별 chart-card에만 잘림 방지) */
-    .chart-section {
-      gap: 10px;
-      margin: 12px 0;
-    }
-    .chart-card {
-      padding: 10px;
-      page-break-inside: avoid;
-      break-inside: avoid;
-    }
+    .badge { padding: 2px 7px; font-size: 9px; }
+    .chart-section { gap: 10px; margin: 12px 0; }
+    .chart-card { padding: 10px; page-break-inside: avoid; break-inside: avoid; }
     .chart-card h4 { font-size: 10px; margin-bottom: 6px; }
     .chart-card .chart-wrap { height: 180px; }
     .chart-full .chart-wrap { height: 220px; }
-
-    /* 푸터 */
     footer { font-size: 9px; padding: 10px 0; }
-
-    /* 색상 강제 유지 */
     * {
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
     }
-
-    /* 페이지 분리 제어 */
     h2, h3 { page-break-after: avoid; break-after: avoid; }
     table { page-break-inside: auto; }
     tr { page-break-inside: avoid; break-inside: avoid; }
@@ -446,7 +373,7 @@
     <header class="report-header">
       <div class="eyebrow">MARKETING REPORT · MAY</div>
       <h1>5월 인스타그램 및 홈페이지 콘텐츠 분석 보고서</h1>
-      <div class="meta">기준일: 2026년 5월 1일 ~ 5월 22일 · 작성: 마케팅팀 이상희</div>
+      <div class="meta">기준일: 2026년 5월 1일 ~ 5월 27일 · 작성: 마케팅팀 이상희</div>
     </header>
 
     <!-- TOC -->
@@ -467,34 +394,34 @@
     <!-- Section 1 -->
     <section id="sec1">
       <h2>1. 계정 전체 성과 요약</h2>
-      <h3>팔로워 추이 (5월 1일 ~ 5월 22일)</h3>
+      <h3>팔로워 추이 (5월 1일 ~ 5월 27일)</h3>
 
       <div class="kpi-grid">
         <div class="kpi-card">
           <div class="label">기준 팔로워 수</div>
-          <div class="value">17,890</div>
+          <div class="value">17,930</div>
         </div>
         <div class="kpi-card positive">
           <div class="label">팔로우</div>
-          <div class="value">+419</div>
+          <div class="value">+425</div>
         </div>
         <div class="kpi-card negative">
           <div class="label">팔로우 취소</div>
-          <div class="value">−211</div>
+          <div class="value">−212</div>
         </div>
         <div class="kpi-card positive">
           <div class="label">순증</div>
-          <div class="value">+208</div>
+          <div class="value">+213</div>
         </div>
         <div class="kpi-card">
           <div class="label">전월 대비 증가율</div>
-          <div class="value">약 1.18%</div>
+          <div class="value">약 1.20%</div>
         </div>
       </div>
 
       <div class="insight success">
-        전월 순증(+144) 대비 성장 폭 <strong>+208</strong>로 큰 폭의 회복세 확인. 팔로우 취소(−211)가 전월(−139) 대비 다소 증가하였으나
-        팔로우 유입 폭(+419)이 이를 상회하며 전체적으로 강한 상승 흐름 유지.
+        전월 순증(+144) 대비 성장 폭 <strong>+213</strong>로 큰 폭의 회복세 확인. 팔로우 취소(−212)가 전월(−139) 대비 다소 증가하였으나
+        팔로우 유입 폭(+425)이 이를 상회하며 전체적으로 강한 상승 흐름 유지.
       </div>
       <p>
         4월 말 썸머라이트 300 입고 콘텐츠 및 5월 초 OOS 행사 시리즈가 5월 초반 팔로워 기반 확대에 직접 기여.
@@ -574,7 +501,7 @@
           <div class="mini-stat"><div class="l">팔로우 증가</div><div class="v">+2</div></div>
           <div class="mini-stat"><div class="l">전환율</div><div class="v">0.02%</div></div>
         </div>
-        <p>입고 안내형 콘텐츠로서 안정적 조회수 확보. 프로필 방문 106건은 이번 달 피드 중 상위권. 다만 팔로우 전환율 0.02%로 낮게 형성되어, 기존 관심 유저 중심 반응 위주, 해당 제품은 새로운 제품이 아닌 기존 제품의 입고의 개념으로 진행되어 신규 유입은 낮게 집계.</p>
+        <p>입고 안내형 콘텐츠로서 안정적 조회수 확보. 프로필 방문 106건은 이번 달 피드 중 상위권. 다만 팔로우 전환율 0.02%로 낮게 형성되어, 기존 관심 유저 중심 반응 위주, 해당 제품은 새로운 제품이 아닌 기존 제품의 입고 개념으로 진행되어 신규 유입은 낮게 집계.</p>
       </div>
 
       <!-- ② -->
@@ -711,11 +638,11 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>썸머라이트 300 입고</td><td class="num">8,770</td><td class="num">78</td><td class="num">9</td><td class="num">9</td><td class="num">+2</td><td class="num">0.02%</td></tr>
+            <tr><td>썸머라이트 300</td><td class="num">8,770</td><td class="num">78</td><td class="num">9</td><td class="num">9</td><td class="num">+2</td><td class="num">0.02%</td></tr>
             <tr><td>OOS 초대권 이벤트 안내</td><td class="num">9,916</td><td class="num">141</td><td class="num">16</td><td class="num">6</td><td class="num">+5</td><td class="num">0.05%</td></tr>
-            <tr><td>OOS 행사 안내 (5/4)</td><td class="num">10,150</td><td class="num">143</td><td class="num">5</td><td class="num">3</td><td class="num">+1</td><td class="num">0.01%</td></tr>
+            <tr><td>OOS 안내 (5/4)</td><td class="num">10,150</td><td class="num">143</td><td class="num">5</td><td class="num">3</td><td class="num">+1</td><td class="num">0.01%</td></tr>
             <tr><td>에어라이트 400 야외컷</td><td class="num">7,904</td><td class="num">127</td><td class="num">11</td><td class="num">5</td><td class="num">+1</td><td class="num">0.01%</td></tr>
-            <tr style="background:#fffbeb;"><td><strong>OOS 행사 부스 미리보기 릴스</strong></td><td class="num"><strong>16,982</strong></td><td class="num"><strong>330</strong></td><td class="num"><strong>48</strong></td><td class="num"><strong>18</strong></td><td class="num"><strong>+27</strong></td><td class="num"><strong>0.16%</strong></td></tr>
+            <tr style="background:#fffbeb;"><td><strong>OOS 부스 미리보기 릴스</strong></td><td class="num"><strong>16,982</strong></td><td class="num"><strong>330</strong></td><td class="num"><strong>48</strong></td><td class="num"><strong>18</strong></td><td class="num"><strong>+27</strong></td><td class="num"><strong>0.16%</strong></td></tr>
             <tr><td>OOS 행사 마무리</td><td class="num">10,125</td><td class="num">—</td><td class="num">8</td><td class="num">1</td><td class="num">+3</td><td class="num">0.03%</td></tr>
             <tr><td>위드 꼴로르 vol.3</td><td class="num">4,504</td><td class="num">66</td><td class="num">3</td><td class="num">1</td><td class="num">+1</td><td class="num">0.02%</td></tr>
             <tr style="background:#fffbeb;"><td><strong>OTT 서베이 이벤트 안내</strong></td><td class="num"><strong>17,005</strong></td><td class="num"><strong>273</strong></td><td class="num"><strong>18</strong></td><td class="num"><strong>10</strong></td><td class="num"><strong>+10</strong></td><td class="num"><strong>0.06%</strong></td></tr>
@@ -762,7 +689,7 @@
           <div class="mini-stat"><div class="l">링크 클릭</div><div class="v">—</div></div>
           <div class="mini-stat"><div class="l">링크 클릭률</div><div class="v">—</div></div>
         </div>
-        <p>프로필 활동 55건은 이번 달 스토리 중 최상위 기록. 판매 안내 메시지 특성상 행사 관련 정보 탐색 행동 강하게 유발, 링크 연결 시 직접 전환 기여 가능성이 매우 높은 콘텐츠 유형으로 분류.</p>
+        <p>프로필 활동 55건은 이번 달 스토리 중 최상위 기록. 판매 안내 메시지 특성상 행사 관련 정보 탐색 행동 강하게 유발, 링크 연결 시 직접 전환 기여 가능성이 매우 높은 콘텐츠로 분류.</p>
       </div>
 
       <div class="content-block">
@@ -798,8 +725,21 @@
           <div class="mini-stat"><div class="l">링크 클릭</div><div class="v">33</div></div>
           <div class="mini-stat"><div class="l">링크 클릭률</div><div class="v">3.05%</div></div>
         </div>
+        <p>링크 연결된 재입고 스토리로 클릭 33건, CTR 3.05% 기록. 4월 다운라이너 프로 190 안내 스토리와 동일 수준 전환율로, 재입고·신제품 안내 포맷에 링크 연결 시 일관되게 높은 전환율 발생함이 재확인.</p>
+      </div>
+
+      <!-- ⑦ 씨씨레터 (신규 추가) -->
+      <div class="content-block">
+        <div class="title"><span class="num-badge">7</span> 씨씨레터 안내 스토리 (5/27) 🏆🔗</div>
+        <div class="mini-grid">
+          <div class="mini-stat"><div class="l">조회수</div><div class="v">1,577</div></div>
+          <div class="mini-stat"><div class="l">반응</div><div class="v">15</div></div>
+          <div class="mini-stat"><div class="l">프로필 활동</div><div class="v">25</div></div>
+          <div class="mini-stat"><div class="l">링크 클릭</div><div class="v">156</div></div>
+          <div class="mini-stat"><div class="l">링크 클릭률</div><div class="v">9.89%</div></div>
+        </div>
         <div class="insight success">
-          이번 달 스토리 중 <strong>유일하게 링크 연결된 콘텐츠</strong>. 링크 클릭 33건 및 클릭률 3.05% 기록, 실구매 전환 유도 기능 강하게 작동. 4월 다운라이너 프로 190 안내 스토리(3.05%)와 동일 수준 전환율로, 재입고·신제품 안내 포맷에 링크 연결 시 일관되게 높은 전환율 발생함이 재확인.
+          이번 달 스토리 중 <strong>링크 클릭률 압도적 1위(9.89%)</strong>. <strong>4월 씨씨레터 스토리(클릭률 2.51%) 대비 약 4배 상승</strong>. 씨씨레터 포맷의 전환 자산화 가능성이 두 달 연속 강하게 확인됨. 향후 씨씨레터 발행 시 스토리 연동 운영 방식의 지속적 활용 필요.
         </div>
       </div>
 
@@ -822,15 +762,17 @@
             <tr><td>OOS 판매 안내</td><td class="num">1,442</td><td class="num">6</td><td class="num">55</td><td class="num">—</td><td class="num">—</td></tr>
             <tr><td>위드 꼴로르</td><td class="num">639</td><td class="num">11</td><td class="num">5</td><td class="num">—</td><td class="num">—</td></tr>
             <tr><td>위드 꼴로르 vol.3 안내</td><td class="num">932</td><td class="num">10</td><td class="num">15</td><td class="num">—</td><td class="num">—</td></tr>
-            <tr style="background:#fffbeb;"><td><strong>썸머라이트 500 재입고</strong></td><td class="num"><strong>1,081</strong></td><td class="num"><strong>4</strong></td><td class="num"><strong>8</strong></td><td class="num"><strong>33</strong></td><td class="num"><strong>3.05%</strong></td></tr>
+            <tr><td>썸머라이트 500 재입고</td><td class="num">1,081</td><td class="num">4</td><td class="num">8</td><td class="num">33</td><td class="num">3.05%</td></tr>
+            <tr style="background:#fffbeb;"><td><strong>씨씨레터 안내 (5/27)</strong></td><td class="num"><strong>1,577</strong></td><td class="num"><strong>15</strong></td><td class="num"><strong>25</strong></td><td class="num"><strong>156</strong></td><td class="num"><strong>9.89%</strong></td></tr>
           </tbody>
         </table>
       </div>
 
-      <p><strong>① 썸머라이트 재입고 스토리(5/20)</strong> — 이번 달 스토리 중 유일하게 링크 연결로 33건 직접 전환 발생. 클릭률 3.05%로 4월 다운라이너 프로 190 안내 스토리와 동일 수준 강한 전환력 확인. 재입고·신제품 안내 포맷에 링크 연결 원칙 운영 방향성의 유효성 재확인.</p>
-      <p><strong>② OOS 판매 안내 스토리(5/7)</strong> — 프로필 활동 55건으로 이달 스토리 최상위 기록. 행사형 콘텐츠에서도 링크 연결 시 실구매 전환 기여 가능성 높은 콘텐츠로 분류.</p>
-      <p><strong>③ 에어라이트 400 재입고 스토리(5/7)</strong> — 4월 동일 콘텐츠와 마찬가지로 링크 미연결로 직접 전환 미발생. 재입고 스토리 운영 시 링크 삽입 원칙 정비가 두 달 연속 지적되는 사항.</p>
-      <p><strong>④ 위드 꼴로르 시리즈</strong> — 브랜딩 콘텐츠로 일관된 도달 유지. 직접 전환은 미발생하나 브랜드 관심 유저의 탐색 유입에 꾸준히 기여하는 콘텐츠 유형 재확인.</p>
+      <p><strong>① 씨씨레터 스토리(5/27)</strong> — 링크 클릭 156건 및 클릭률 9.89% 기록으로 이달 스토리 중 압도적 전환 성과 확인. 4월 씨씨레터 스토리(클릭률 2.51%) 대비 약 4배 상승 수치. 씨씨레터 포맷의 전환 자산화 가능성이 두 달 연속 강하게 확인됨. 향후 씨씨레터 발행 시 스토리 연동 운영 방식의 지속적 활용 필요.</p>
+      <p><strong>② 썸머라이트 재입고 스토리(5/20)</strong> — 링크 연결로 33건 직접 전환 발생. 클릭률 3.05%로 4월 다운라이너 프로 190 안내 스토리와 동일 수준 강한 전환력 확인. 재입고·신제품 안내 포맷에 링크 연결 원칙 운영 방향성의 유효성 재확인.</p>
+      <p><strong>③ OOS 판매 안내 스토리(5/7)</strong> — 프로필 활동 55건으로 이달 스토리 최상위 기록. 행사형 콘텐츠에서도 링크 연결 시 실구매 전환 기여 가능성 높은 콘텐츠로 분류.</p>
+      <p><strong>④ 에어라이트 400 재입고 스토리(5/7)</strong> — 4월 동일 콘텐츠와 마찬가지로 링크 미연결로 직접 전환 미발생. 재입고 스토리 운영 시 링크 삽입 원칙 정비가 두 달 연속 지적되는 사항.</p>
+      <p><strong>⑤ 위드 꼴로르 시리즈</strong> — 브랜딩 콘텐츠로 일관된 도달 유지. 직접 전환은 미발생하나 브랜드 관심 유저의 탐색 유입에 꾸준히 기여하는 콘텐츠 유형 재확인.</p>
 
       <!-- 2-4 KPI 평가 -->
       <h3 id="sec2-4">2-4. KPI 평가 기준 적용 결과</h3>
@@ -869,7 +811,7 @@
             <tr><td>OOS 초대권 이벤트 안내</td><td class="num">9,916</td><td class="num">+5</td><td class="num">0.05%</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
             <tr><td>OOS 행사 안내</td><td class="num">10,150</td><td class="num">+1</td><td class="num">0.01%</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
             <tr><td>에어라이트 400 야외컷</td><td class="num">7,904</td><td class="num">+1</td><td class="num">0.01%</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
-            <tr style="background:#fffbeb;"><td><strong>OOS 행사 부스 미리보기 릴스</strong></td><td class="num"><strong>16,982</strong></td><td class="num"><strong>+27</strong></td><td class="num"><strong>0.16%</strong></td><td><span class="badge badge-avg">평균 이상</span></td></tr>
+            <tr style="background:#fffbeb;"><td><strong>OOS 부스 미리보기 릴스</strong></td><td class="num"><strong>16,982</strong></td><td class="num"><strong>+27</strong></td><td class="num"><strong>0.16%</strong></td><td><span class="badge badge-avg">평균 이상</span></td></tr>
             <tr><td>OOS 행사 마무리</td><td class="num">10,125</td><td class="num">+3</td><td class="num">0.03%</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
             <tr><td>위드 꼴로르 vol.3</td><td class="num">4,504</td><td class="num">—</td><td class="num">—</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
             <tr><td>OTT 서베이 이벤트 안내</td><td class="num">17,005</td><td class="num">+10</td><td class="num">0.06%</td><td><span class="badge badge-brand">브랜딩형</span></td></tr>
@@ -881,7 +823,7 @@
         5월 콘텐츠 전반적으로 <strong>0.01 ~ 0.16%</strong> 구간 분포, 4월(0.10 ~ 0.16%) 대비 평균 전환율 다소 하락. 5월 콘텐츠가 행사·이벤트 안내 중심 구성으로, 신규 팔로우 전환보다 기존 관심 유저의 정보 탐색 행동에 초점이 맞춰진 결과로 분석.
       </div>
       <div class="insight success">
-        OOS 행사 부스 미리보기 릴스(0.16%)만 평균 이상 구간 진입. 행사 시리즈 콘텐츠 중 <strong>릴스 포맷의 신규 유입 효과</strong>가 다른 행사 안내형 피드 대비 압도적으로 높게 작동. 향후 행사·이벤트 콘텐츠 운영 시 릴스 포맷 우선 활용이 효과적 전략으로 판단.
+        OOS 부스 미리보기 릴스(0.16%)만 평균 이상 구간 진입. 행사 시리즈 콘텐츠 중 <strong>릴스 포맷의 신규 유입 효과</strong>가 다른 행사 안내형 피드 대비 압도적으로 높게 작동. 향후 행사·이벤트 콘텐츠 운영 시 릴스 포맷 우선 활용이 효과적 전략으로 판단.
       </div>
       <div class="insight info">
         다음 단계 목표인 <strong>0.3% 이상 대표 성장 자산 콘텐츠</strong> 확보를 위해서는 제품 메시지 중심 콘텐츠 비중 확대 및 전환 유도 문구 최적화 지속 필요. 6월 신제품 콘텐츠 및 다운라이너 프로 190 릴스 재제작 업로드 시점이 해당 구간 진입의 주요 기회.
@@ -956,11 +898,72 @@
         해당 저널 조회 82명 방문자 중 약 <strong>11 ~ 15%</strong>가 실제 상품 상세페이지 또는 상품 목록 유입으로 상품 탐색 행동 이어감.
       </div>
 
-      <p>4월 보고서에서 확인된 다운라이너 프로 190 룩북 페이지의 상품 상세페이지 직접 전환율(15.61%)과 비교 시, 저널 콘텐츠는 룩북 대비 직접 전환율 다소 낮음. 다만 브랜드 스토리텔링 기반 정보 전달 역할 수행 및 상품 탐색 유입에 일정 수준 기여하는 콘텐츠 유형으로 평가. 룩북이 상품 전환 중심 자산이라면, 저널은 제품 이해도 및 브랜드 관여도 강화를 통해 중장기 관심 유저층을 형성하는 보완적 콘텐츠 자산으로 기능.</p>
+      <p>브랜드 스토리텔링 기반 정보 전달 역할 수행 및 상품 탐색 유입에 일정 수준 기여하는 콘텐츠 유형으로 평가. 룩북이 상품 전환 중심 자산이라면, 저널은 제품 이해도 및 브랜드 관여도 강화를 통해 중장기 관심 유저층을 형성하는 보완적 콘텐츠 자산으로 기능.</p>
 
-      <h3>4-3. 홈페이지 운영 방향</h3>
+      <!-- 4-3 비교 저널 -->
+      <h3>4-3. 에어라이트 라인 vs 얼티밋 라이트 라인 비교 저널 (5/27 업로드) — 업로드 후 3일간 성과</h3>
+
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><th style="width:30%;">주제</th><td>에어라이트 라인 vs 얼티밋 라이트 라인, 뭐가 다를까요?</td></tr>
+            <tr><th>성격</th><td>제품 라인업 비교형 정보 콘텐츠</td></tr>
+            <tr><th>목적</th><td>라인업 차이점 설명을 통한 제품 선택 가이드 제공 및 상세페이지 유입 유도</td></tr>
+            <tr><th>게시일</th><td>2026년 5월 27일</td></tr>
+            <tr><th>분석 기간</th><td>5/27 ~ 5/29 (업로드 직후 3일간)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>1) 저널 페이지 접속 현황</h4>
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="label">조회수 (PV)</div>
+          <div class="value">649회</div>
+        </div>
+        <div class="kpi-card">
+          <div class="label">방문자 수</div>
+          <div class="value">480명</div>
+        </div>
+        <div class="kpi-card">
+          <div class="label">평균 체류 시간</div>
+          <div class="value">1분 16초</div>
+        </div>
+      </div>
+
+      <div class="insight info">
+        업로드 직후 3일간 약 <strong>650회 조회</strong> 기록, 활발한 소비 흐름 확인. 평균 체류 시간 76초로 일반적인 상품 목록 페이지 대비 높은 집중도 확인. 콘텐츠 길이·깊이에 따라 차이가 있으나, 라인업 비교형 정보 콘텐츠로서 충분한 정독 행동 유발됨을 확인.
+      </div>
+
+      <h4>2) 상세페이지 유입 현황 (이동 경로)</h4>
+      <p>저널 확인 후 실제 상품 상세페이지로 이동한 주요 패턴.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>유입 경로</th>
+              <th>수치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>직접 이동 (저널 → 상품 상세)</td><td>14건</td></tr>
+            <tr><td>단계적 이동 (저널 → 상품 분류 → 상품 상세)</td><td>11건</td></tr>
+            <tr><td>기타 탐색 유입 (메인화면 이동 후 상품 검색 등)</td><td>약 5 ~ 10건</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="insight success">
+        4월 다운라이너 프로 190 저널(저널 → 상세 직접 이동 약 9~11건) 대비 <strong>직접 이동 수치 상승</strong> 확인. 라인업 비교형 콘텐츠의 상세페이지 유입 유도 효과가 <strong>신제품 단독 소개형 저널 대비 더 강하게 작동</strong>하는 흐름.
+      </div>
+
+      <p>4-1·4-2의 다운라이너 프로 190 저널이 단일 제품 정보 전달형이라면, 본 비교 저널은 <strong>라인 간 비교를 통한 의사결정 보조형</strong>으로 콘텐츠 역할이 차별화됨. 향후 유사 라인업이 존재하는 제품군(예: 침낭 라인, 다운 라인)에도 비교형 저널 포맷 확장 적용 검토 가치 있음.</p>
+
+      <h3>4-4. 홈페이지 운영 방향</h3>
       <p>다운라이너 프로 190 홈페이지 콘텐츠 1개월간 누적 조회수 2,524건 기록, 중장기 도달 자산으로서의 안정적 기능 확인. 향후 신제품 출시 시에도 <strong>룩북 + 저널 콘텐츠 병행 구조 선제 활용 방향</strong>이 효과적일 것으로 판단.</p>
-      <p>4월 보고서 지적 사항인 모바일 Shop 카테고리 내 콘텐츠 배너 미반영 문제 개선 작업 진행. 5월 27일 업로드 예정 홈페이지 콘텐츠를 기점으로 모바일 환경 배너 노출 정상화 및 콘텐츠 열람 → 제품 구매 전환 흐름 완성 여부를 6월 보고서에서 점검 예정.</p>
+      <p>5월 27일 업로드한 에어라이트 vs 얼티밋라이트 비교 저널의 초기 성과(방문자 480명, 직접 전환 14건)를 통해 <strong>비교 가이드형 저널 콘텐츠의 가능성</strong> 확인. 6월 이후 유사 라인업 제품 대상 비교 저널 시리즈화 검토.</p>
+      <p>4월 보고서 지적 사항인 모바일 Shop 카테고리 내 콘텐츠 배너 미반영 문제 개선 작업 진행. 5월 27일 업로드 비교 저널을 기점으로 모바일 환경 배너 노출 정상화 및 콘텐츠 열람 → 제품 구매 전환 흐름 완성 여부를 6월 보고서에서 점검 예정.</p>
     </section>
 
     <footer style="text-align:center; color:var(--muted); font-size:13px; padding:20px 0;">
@@ -1000,30 +1003,15 @@
       data: {
         labels: ['팔로우 유입', '팔로우 취소', '순증'],
         datasets: [
-          {
-            label: '4월',
-            data: [283, 139, 144],
-            backgroundColor: 'rgba(156, 163, 175, 0.7)',
-            borderRadius: 6,
-          },
-          {
-            label: '5월',
-            data: [419, 211, 208],
-            backgroundColor: colors.primary,
-            borderRadius: 6,
-          },
+          { label: '4월', data: [283, 139, 144], backgroundColor: 'rgba(156, 163, 175, 0.7)', borderRadius: 6 },
+          { label: '5월', data: [425, 212, 213], backgroundColor: colors.primary, borderRadius: 6 },
         ],
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { position: 'top' },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y}명`,
-            },
-          },
+          tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y}명` } },
         },
         scales: {
           y: { beginAtZero: true, grid: { color: '#f3f4f6' } },
@@ -1036,40 +1024,22 @@
     new Chart(document.getElementById('followerBreakdownChart'), {
       type: 'doughnut',
       data: {
-        labels: ['신규 팔로우 (+419)', '팔로우 취소 (-211)'],
-        datasets: [
-          {
-            data: [419, 211],
-            backgroundColor: [colors.accent, colors.danger],
-            borderWidth: 0,
-          },
-        ],
+        labels: ['신규 팔로우 (+425)', '팔로우 취소 (-212)'],
+        datasets: [{ data: [425, 212], backgroundColor: [colors.accent, colors.danger], borderWidth: 0 }],
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        cutout: '65%',
+        responsive: true, maintainAspectRatio: false, cutout: '65%',
         plugins: {
           legend: { position: 'bottom' },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.label}: ${ctx.parsed}명`,
-            },
-          },
+          tooltip: { callbacks: { label: ctx => `${ctx.label}: ${ctx.parsed}명` } },
         },
       },
     });
 
     // 3) 콘텐츠별 조회수 & 전환율 (이중 축)
     const contentLabels = [
-      '썸머라이트 300',
-      'OOS 초대권',
-      'OOS 안내',
-      '에어라이트 400',
-      'OOS 부스 릴스',
-      'OOS 마무리',
-      '위드 꼴로르 v3',
-      'OTT 서베이',
+      '썸머라이트 300','OOS 초대권','OOS 안내','에어라이트 400',
+      'OOS 부스 릴스','OOS 마무리','위드 꼴로르 v3','OTT 서베이',
     ];
     new Chart(document.getElementById('contentPerformanceChart'), {
       type: 'bar',
@@ -1077,51 +1047,26 @@
         labels: contentLabels,
         datasets: [
           {
-            type: 'bar',
-            label: '조회수',
+            type: 'bar', label: '조회수',
             data: [8770, 9916, 10150, 7904, 16982, 10125, 4504, 17005],
-            backgroundColor: colors.primaryLight,
-            borderColor: colors.primary,
-            borderWidth: 1.5,
-            borderRadius: 6,
-            yAxisID: 'y',
+            backgroundColor: colors.primaryLight, borderColor: colors.primary,
+            borderWidth: 1.5, borderRadius: 6, yAxisID: 'y',
           },
           {
-            type: 'line',
-            label: '팔로우 전환율 (%)',
+            type: 'line', label: '팔로우 전환율 (%)',
             data: [0.02, 0.05, 0.01, 0.01, 0.16, 0.03, 0.02, 0.06],
-            borderColor: colors.warning,
-            backgroundColor: colors.warning,
-            borderWidth: 3,
-            tension: 0.35,
-            pointRadius: 5,
-            pointHoverRadius: 7,
-            yAxisID: 'y1',
+            borderColor: colors.warning, backgroundColor: colors.warning,
+            borderWidth: 3, tension: 0.35, pointRadius: 5, pointHoverRadius: 7, yAxisID: 'y1',
           },
         ],
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         interaction: { mode: 'index', intersect: false },
-        plugins: {
-          legend: { position: 'top' },
-        },
+        plugins: { legend: { position: 'top' } },
         scales: {
-          y: {
-            type: 'linear',
-            position: 'left',
-            beginAtZero: true,
-            title: { display: true, text: '조회수' },
-            grid: { color: '#f3f4f6' },
-          },
-          y1: {
-            type: 'linear',
-            position: 'right',
-            beginAtZero: true,
-            title: { display: true, text: '전환율 (%)' },
-            grid: { drawOnChartArea: false },
-          },
+          y: { type: 'linear', position: 'left', beginAtZero: true, title: { display: true, text: '조회수' }, grid: { color: '#f3f4f6' } },
+          y1: { type: 'linear', position: 'right', beginAtZero: true, title: { display: true, text: '전환율 (%)' }, grid: { drawOnChartArea: false } },
           x: { grid: { display: false } },
         },
       },
@@ -1132,24 +1077,21 @@
       type: 'bar',
       data: {
         labels: contentLabels,
-        datasets: [
-          {
-            label: '팔로우 전환율 (%)',
-            data: [0.02, 0.05, 0.01, 0.01, 0.16, 0.03, 0.02, 0.06],
-            backgroundColor: ctx => {
-              const v = ctx.parsed.y;
-              if (v >= 0.3) return colors.danger;
-              if (v >= 0.2) return colors.warning;
-              if (v >= 0.1) return colors.accent;
-              return colors.primary;
-            },
-            borderRadius: 6,
+        datasets: [{
+          label: '팔로우 전환율 (%)',
+          data: [0.02, 0.05, 0.01, 0.01, 0.16, 0.03, 0.02, 0.06],
+          backgroundColor: ctx => {
+            const v = ctx.parsed.y;
+            if (v >= 0.3) return colors.danger;
+            if (v >= 0.2) return colors.warning;
+            if (v >= 0.1) return colors.accent;
+            return colors.primary;
           },
-        ],
+          borderRadius: 6,
+        }],
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {
@@ -1166,85 +1108,70 @@
           },
         },
         scales: {
-          y: {
-            beginAtZero: true,
-            max: 0.35,
-            title: { display: true, text: '전환율 (%)' },
-            grid: { color: '#f3f4f6' },
-          },
+          y: { beginAtZero: true, max: 0.35, title: { display: true, text: '전환율 (%)' }, grid: { color: '#f3f4f6' } },
           x: { grid: { display: false } },
         },
       },
-      plugins: [
-        {
-          id: 'kpiLines',
-          afterDraw(chart) {
-            const { ctx, chartArea, scales: { y } } = chart;
-            const lines = [
-              { value: 0.1, label: '평균 이상 (0.1%)', color: colors.accent },
-              { value: 0.2, label: '성장 기여 (0.2%)', color: colors.warning },
-              { value: 0.3, label: '대표 성장 자산 (0.3%)', color: colors.danger },
-            ];
-            ctx.save();
-            lines.forEach(line => {
-              const yPos = y.getPixelForValue(line.value);
-              ctx.beginPath();
-              ctx.setLineDash([5, 5]);
-              ctx.strokeStyle = line.color;
-              ctx.lineWidth = 1.5;
-              ctx.moveTo(chartArea.left, yPos);
-              ctx.lineTo(chartArea.right, yPos);
-              ctx.stroke();
-              ctx.setLineDash([]);
-              ctx.fillStyle = line.color;
-              ctx.font = '11px Pretendard, sans-serif';
-              ctx.textAlign = 'right';
-              ctx.fillText(line.label, chartArea.right - 6, yPos - 4);
-            });
-            ctx.restore();
-          },
+      plugins: [{
+        id: 'kpiLines',
+        afterDraw(chart) {
+          const { ctx, chartArea, scales: { y } } = chart;
+          const lines = [
+            { value: 0.1, label: '평균 이상 (0.1%)', color: colors.accent },
+            { value: 0.2, label: '성장 기여 (0.2%)', color: colors.warning },
+            { value: 0.3, label: '대표 성장 자산 (0.3%)', color: colors.danger },
+          ];
+          ctx.save();
+          lines.forEach(line => {
+            const yPos = y.getPixelForValue(line.value);
+            ctx.beginPath();
+            ctx.setLineDash([5, 5]);
+            ctx.strokeStyle = line.color;
+            ctx.lineWidth = 1.5;
+            ctx.moveTo(chartArea.left, yPos);
+            ctx.lineTo(chartArea.right, yPos);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillStyle = line.color;
+            ctx.font = '11px Pretendard, sans-serif';
+            ctx.textAlign = 'right';
+            ctx.fillText(line.label, chartArea.right - 6, yPos - 4);
+          });
+          ctx.restore();
         },
-      ],
+      }],
     });
 
-    // 5) 스토리 조회수 비교
+    // 5) 스토리 조회수 비교 (씨씨레터 포함)
     new Chart(document.getElementById('storyViewChart'), {
       type: 'bar',
       data: {
         labels: [
-          '에어라이트 400 재입고',
-          'OOS 전시 안내',
-          'OOS 판매 안내',
-          '위드 꼴로르',
-          '위드 꼴로르 v3',
-          '썸머라이트 500 재입고',
+          '에어라이트 400 재입고','OOS 전시 안내','OOS 판매 안내',
+          '위드 꼴로르','위드 꼴로르 v3','썸머라이트 500 재입고','씨씨레터 안내',
         ],
-        datasets: [
-          {
-            label: '조회수',
-            data: [1594, 1592, 1442, 639, 932, 1081],
-            backgroundColor: [
-              colors.primary,
-              colors.primary,
-              colors.primary,
-              colors.primary,
-              colors.primary,
-              colors.accent,
-            ],
-            borderRadius: 6,
-          },
-        ],
+        datasets: [{
+          label: '조회수',
+          data: [1594, 1592, 1442, 639, 932, 1081, 1577],
+          backgroundColor: [
+            colors.primary, colors.primary, colors.primary,
+            colors.primary, colors.primary, colors.accent, colors.danger,
+          ],
+          borderRadius: 6,
+        }],
       },
       options: {
         indexAxis: 'y',
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              afterLabel: ctx =>
-                ctx.dataIndex === 5 ? '🔗 링크 연결 (CTR 3.05%)' : '',
+              afterLabel: ctx => {
+                if (ctx.dataIndex === 5) return '🔗 링크 연결 (CTR 3.05%)';
+                if (ctx.dataIndex === 6) return '🏆 링크 연결 (CTR 9.89%) — 이달 최고';
+                return '';
+              },
             },
           },
         },
@@ -1260,30 +1187,20 @@
       type: 'line',
       data: {
         labels: ['업로드 시점', '1주 경과 (4월 보고서)', '1개월 경과 (5월 보고서)'],
-        datasets: [
-          {
-            label: '다운라이너 프로 190',
-            data: [0, 557, 2524],
-            borderColor: colors.purple,
-            backgroundColor: 'rgba(124, 58, 237, 0.15)',
-            borderWidth: 3,
-            tension: 0.35,
-            fill: true,
-            pointRadius: 6,
-            pointHoverRadius: 8,
-          },
-        ],
+        datasets: [{
+          label: '다운라이너 프로 190',
+          data: [0, 557, 2524],
+          borderColor: colors.purple,
+          backgroundColor: 'rgba(124, 58, 237, 0.15)',
+          borderWidth: 3, tension: 0.35, fill: true,
+          pointRadius: 6, pointHoverRadius: 8,
+        }],
       },
       options: {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, maintainAspectRatio: false,
         plugins: {
           legend: { position: 'top' },
-          tooltip: {
-            callbacks: {
-              label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()}회`,
-            },
-          },
+          tooltip: { callbacks: { label: ctx => `${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()}회` } },
         },
         scales: {
           y: { beginAtZero: true, grid: { color: '#f3f4f6' }, title: { display: true, text: '누적 조회수' } },
